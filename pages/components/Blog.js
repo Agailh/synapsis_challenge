@@ -43,7 +43,8 @@ const Blog = () => {
           <div className="grid md:grid-cols-4 grid-cols-1 gap-10">
             {posts.map((posts) => (
               <div className="md:mx-0 mx-5 w-72 h-100 rounded-lg crusor-pointer hover:bg-blue-600 group hover:shadow-2x1 p-6 border border-gray-100">
-                <h3 key={posts.id} className="font-semibold uppercase text-sm my-2 text-blue-600 text-start group-hover:text-white">
+                <h3 key={posts.id}></h3>
+                <h3 className="font-semibold uppercase text-sm my-2 text-blue-600 text-start group-hover:text-white">
                   {posts.title}
                 </h3>
                 <p className="font-normal text-sm text-gray-500 text-start group-hover:text-white">{posts.body}</p>
@@ -63,7 +64,8 @@ const Blog = () => {
                           <path strokeLinecap="round" strokeLinejoin="round" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                       </span>
-                      <span key={Comments} className="font-semibold uppercase text-sm my-2 text-gray-500 text-start group-hover:text-white">
+                      <span key={Comments.id}></span>
+                      <span className="font-semibold uppercase text-sm my-2 text-gray-500 text-start group-hover:text-white">
                         {Comments.name}
                       </span>
                     </div>
