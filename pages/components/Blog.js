@@ -56,7 +56,7 @@ const Blog = () => {
                   <h4 className="font-semibold uppercase text-sm my-2 text-gray-600 text-start group-hover:text-white justify-between items-center">Comments</h4>
                 </div>
                 {Comments.map((Comments) => (
-                  <div>
+                  <div key={Comments.id}>
                     <div className="flex">
                       <span className="font-semibold uppercase text-sm my-2 text-gray-500 text-start group-hover:text-white">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
