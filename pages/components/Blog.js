@@ -69,7 +69,7 @@ const Blog = () => {
                       </span>
                     </div>
 
-                    <p className="font-normal text-sm text-gray-500 text-start group-hover:text-white"key={posts.id}>{Comments.body}</p>
+                    <p className="font-normal text-sm text-gray-500 text-start group-hover:text-white"key={Comments.id}>{Comments.body}</p>
                   </div>
                 ))}
               </div>
