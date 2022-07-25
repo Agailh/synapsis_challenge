@@ -44,7 +44,7 @@ const Blog = () => {
             {posts.map((posts) => (
               <div className="md:mx-0 mx-5 w-72 h-100 rounded-lg crusor-pointer hover:bg-blue-600 group hover:shadow-2x1 p-6 border border-gray-100">
               
-                <h3 className="font-semibold uppercase text-sm my-2 text-blue-600 text-start group-hover:text-white" key={posts.id} >
+                <h3 className="font-semibold uppercase text-sm my-2 text-blue-600 text-start group-hover:text-white"  >
                   {posts.title}
                 </h3>
                 <p className="font-normal text-sm text-gray-500 text-start group-hover:text-white">{posts.body}</p>
@@ -65,7 +65,7 @@ const Blog = () => {
                         </svg>
                       </span>
              
-                      <span className="font-semibold uppercase text-sm my-2 text-gray-500 text-start group-hover:text-white"key={Comments.id}>
+                      <span className="font-semibold uppercase text-sm my-2 text-gray-500 text-start group-hover:text-white">
                         {Comments.name}
                       </span>
                     </div>
